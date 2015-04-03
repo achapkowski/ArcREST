@@ -434,7 +434,6 @@ class AdminMapService(BaseAGOLClass):
         if isinstance(value, security.AGOLTokenSecurityHandler):
             self._securityHandler = value
             self._token = value.token
-
         else:
             raise AttributeError("This object only accepts security.AGOLTokenSecurityHandler")
 
