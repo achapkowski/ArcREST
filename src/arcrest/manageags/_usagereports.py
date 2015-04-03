@@ -145,7 +145,7 @@ class UsageReports(BaseAGSServer):
                           since="LAST_DAY",
                           fromValue=None,
                           toValue=None,
-                          aggrgationInterval=None
+                          aggregationInterval=None
                           ):
         """
         Creates a new usage report. A usage report is created by submitting
@@ -258,8 +258,8 @@ class UsageReports(BaseAGSServer):
             params["queries"] = [queries]
         elif isinstance(queries, list):
             params["queries"] = queries
-        if aggrgationInterval is not None:
-            params['aggregationInterval'] = aggrgationInterval
+        if aggregationInterval is not None:
+            params['aggregationInterval'] = aggregationInterval
         if since.lower() == "custom":
             params['to'] = toValue
             params['from'] = fromValue
