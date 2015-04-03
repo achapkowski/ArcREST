@@ -38,8 +38,7 @@ class Services(BaseAGOLClass):
         self._proxy_port = proxy_port
         if securityHandler is not None and \
            isinstance(securityHandler, BaseSecurityHandler):
-            if isinstance(securityHandler, (security.AGOLTokenSecurityHandler,
-                                            security.PortalTokenSecurityHandler)):
+            if isinstance(securityHandler, security.AGOLTokenSecurityHandler):
                 self._token = securityHandler.token
                 self._securityHandler = securityHandler
                 if not securityHandler is None:
