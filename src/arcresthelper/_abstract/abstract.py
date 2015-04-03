@@ -8,12 +8,10 @@ from arcrest.hostedservice import AdminFeatureService
 import datetime, time
 import json
 import os
-import common as Common
+from .. import common 
 import gc
 
-class ArcRestHelperError(Exception):
-    """ raised when error occurs in utility module functions """
-    pass
+
 ########################################################################
 class baseToolsClass(object):
      #----------------------------------------------------------------------
